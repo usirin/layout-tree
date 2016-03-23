@@ -1,0 +1,35 @@
+{
+  "name": "simple-boilerplate-node",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "test": "./node_modules/mocha/bin/_mocha --reporter spec --compilers coffee:coffee-script/register",
+    "test:watch": "npm test -- --watch",
+    "build:watch": "./node_modules/coffee-script/bin/coffee -o lib -wbc src",
+    "build:lib": "./node_modules/coffee-script/bin/coffee -o lib -bc src",
+    "build": "npm run build:lib",
+    "prepublish": "npm run clean && npm run build",
+    "postpublish": "npm run clean"
+  },
+  "author": "Umut Sirin <umutsirin1@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usirin/simple-boilerplate-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usirin/simple-boilerplate-node/issues"
+  },
+  "homepage": "https://github.com/usirin/simple-boilerplate-node#readme",
+  "description": ""
+}
