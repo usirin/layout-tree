@@ -18,7 +18,7 @@ module.exports = class ParentNode extends Node
     clone = child.clone()
 
     if orientation isnt @orientation
-      parent = new ParentNode @meta, orientation
+      parent = new ParentNode child.meta, orientation
       parent.attachChildren [child, clone]
       toBeInserted = [parent]
     else

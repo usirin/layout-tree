@@ -12,7 +12,7 @@ module.exports = class Node
     return this
 
   clone: ->
-    newNode = new Node @type, @orientation, @meta
+    newNode = new Node @type, @meta, @orientation
     newNode.setParent @parent  if @parent
 
     return newNode
