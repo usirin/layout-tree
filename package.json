@@ -1,5 +1,5 @@
 {
-  "name": "simple-boilerplate-node",
+  "name": "layout-tree",
   "version": "0.0.0",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "Umut Sirin <umutsirin1@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "coffee-script": "^1.10.0",
+    "coffee-script": "^1.11.0",
     "expect": "^1.20.2",
     "mocha": "^3.0.0"
   },
@@ -31,5 +31,5 @@
     "url": "https://github.com/usirin/simple-boilerplate-node/issues"
   },
   "homepage": "https://github.com/usirin/simple-boilerplate-node#readme",
-  "description": ""
+  "description": "An abstract tree data-structure to represent windows as leaf nodes."
 }
