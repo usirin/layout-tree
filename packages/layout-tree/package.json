@@ -1,6 +1,6 @@
 {
   "name": "layout-tree",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rm -rf lib",
@@ -26,11 +26,17 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/usirin/simple-boilerplate-node.git"
+    "url": "git+https://github.com/usirin/layout-tree.git"
   },
   "bugs": {
-    "url": "https://github.com/usirin/simple-boilerplate-node/issues"
+    "url": "https://github.com/usirin/layout-tree/issues"
   },
-  "homepage": "https://github.com/usirin/simple-boilerplate-node#readme",
-  "description": "An abstract tree data-structure to represent windows as leaf nodes."
+  "homepage": "https://github.com/usirin/layout-tree#readme",
+
+  "description": "An abstract tree data-structure to represent windows as leaf nodes.",
+  "keywords": [
+    "layout",
+    "tree",
+    "redux"
+  ]
 }
