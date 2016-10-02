@@ -1,4 +1,4 @@
-# layout-tree
+# layout-tree [![Build Status](https://travis-ci.org/usirin/layout-tree.svg?branch=master)](https://travis-ci.org/usirin/layout-tree)
 
 Data structure for laying out splitted windows.
 
