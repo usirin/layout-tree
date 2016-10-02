@@ -37,12 +37,12 @@ describe '#findSibling', ->
           createNode id: 5
         ]
 
-    it.only 'should  sibling of given direction', ->
+    it 'should return sibling of given direction', ->
       node = tree.getAt(2)
       sibling = findSibling(node, Direction.UP)
       expect(sibling.meta.id).toEqual 1
 
-    it 'should  itself if there is no sibling of given direction', ->
+    it 'should return itself if there is no sibling of given direction', ->
       node = tree.getAt(0)
       sibling = findSibling(node, Direction.UP)
       expect(sibling.meta.id).toEqual 0
