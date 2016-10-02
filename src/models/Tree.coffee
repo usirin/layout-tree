@@ -1,4 +1,4 @@
-Node = require './node'
+Node = require './Node'
 { getAt, traverse } = require '../getAt'
 findSibling = require '../findSibling'
 
