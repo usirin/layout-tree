@@ -1,35 +1,25 @@
 {
-  "name": "layout-tree",
-  "version": "0.2.0",
-  "main": "lib/index.js",
-  "scripts": {
-    "clean": "rm -rf lib",
-    "test": "./node_modules/mocha/bin/_mocha --reporter spec --compilers coffee:coffee-script/register",
-    "test:watch": "npm test -- --watch",
-    "build:watch": "./node_modules/coffee-script/bin/coffee -o lib -wbc src",
-    "build:lib": "./node_modules/coffee-script/bin/coffee -o lib -bc src",
-    "build": "npm run build:lib",
-    "prepublish": "npm run clean && npm run build",
-    "postpublish": "npm run clean"
-  },
-  "author": "Umut Sirin <umutsirin1@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "coffee-script": "^1.11.0",
-    "expect": "^1.20.2",
-    "mocha": "^3.0.0"
+    "lerna": "2.0.0-beta.30",
+    "mocha": "^3.1.0"
   },
-  "directories": {
-    "test": "test"
-  },
+  "name": "layout-tree",
+  "version": "0.0.0-lerna",
+  "main": "lib/index.js",
   "dependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/usirin/simple-boilerplate-node.git"
+    "url": "git+https://github.com/usirin/layout-tree.git"
   },
+  "author": "",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/usirin/simple-boilerplate-node/issues"
+    "url": "https://github.com/usirin/layout-tree/issues"
   },
-  "homepage": "https://github.com/usirin/simple-boilerplate-node#readme",
-  "description": "An abstract tree data-structure to represent windows as leaf nodes."
+  "homepage": "https://github.com/usirin/layout-tree#readme",
+  "description": ""
 }

@@ -13,6 +13,6 @@ install:
   - npm install
 
 script:
-  - npm run prepublish
-  - npm run test
+  - ./node_modules/lerna/bin/lerna.js bootstrap
+  - ./node_modules/lerna/bin/lerna.js run test
 
